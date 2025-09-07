@@ -1,0 +1,111 @@
+# OS and System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+.directory
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Temporary Files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
+# Logs and Runtime
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# Wine and Gaming
+*.wine/
+.wine/
+wineprefix/
+wine-*
+*.msi
+*.exe.log
+crashdumps/
+
+# VR and Graphics
+*.dmp
+*.crash
+vrserver.txt
+steamvr.vrsettings
+lighthouse_console.log
+*.mdmp
+
+# Configuration and Cache
+.cache/
+cache/
+*.cache
+config.ini
+settings.conf
+user.cfg
+*.cfg.backup
+
+# Steam and Game Data
+steamapps/
+userdata/
+steam_autocloud.vdf
+*.acf
+.steam/
+.local/share/Steam/
+
+# DCS Specific
+Saved Games/
+DCS/
+DCS.log
+dcs_*.log
+
+# Development
+.vscode/
+.idea/
+*.sublime-*
+.project
+.classpath
+
+# Build and Package Files
+build/
+dist/
+*.deb
+*.rpm
+*.tar.gz
+*.zip
+*.7z
+
+# Scripts Runtime
+*.pid
+*.lock
+run/
+var/
+
+# Documentation Build
+docs/_build/
+docs/.doctrees/
+*.epub
+*.pdf
+
+# Private and Sensitive
+*.key
+*.pem
+*.p12
+secrets/
+.env
+.env.local
+credentials/
+auth/
