@@ -1,0 +1,2 @@
+This project is intended to explore getting DCS working on Popos Linux with VR working with the Pico4 headset.
+
