@@ -8,7 +8,13 @@ This project aims to research and implement solutions for running DCS World in V
 
 ## Current Status
 
-🚧 **Early Development** - This project is in the initial research and planning phase.
+🚧 **Phase 1: Research & Environment Setup** - Currently implementing initial research and environment setup.
+
+### Phase 1 Documentation
+- 📋 **[Phase 1 Implementation Plan](docs/phase1-implementation-plan.md)** - Detailed roadmap and objectives
+- 📋 **[Phase 1 Action Items](docs/phase1-action-items.md)** - Day-by-day checklist and quick start guide
+- 🔍 **[Research Findings](docs/phase1-research-findings.md)** - Technical investigation results
+- 📖 **[Product Requirements Document](docs/PRD.md)** - Complete project scope and timeline
 
 ## Goals
 
@@ -17,8 +23,16 @@ This project aims to research and implement solutions for running DCS World in V
 - Document the setup process for other Linux VR enthusiasts
 - Create automated setup scripts where possible
 
-## Potential Technical Approach
+## Technical Approach
 
+### Current Phase 1 Focus
+- Research Linux VR ecosystem compatibility
+- Investigate Wine/Proton VR support capabilities
+- Test Pico 4 connectivity options (USB/ALVR)
+- Establish performance baselines and requirements
+- Document findings and create implementation roadmap
+
+### Future Phases
 - Wine/Proton compatibility layer configuration
 - OpenXR runtime setup for Linux VR
 - Pico 4 headset driver integration
@@ -26,7 +40,13 @@ This project aims to research and implement solutions for running DCS World in V
 
 ## Getting Started
 
-This project is in early development. Check back for setup instructions as the project progresses.
+### For Developers/Testers
+1. Review the **[Phase 1 Action Items](docs/phase1-action-items.md)** for immediate next steps
+2. Check **[Research Findings](docs/phase1-research-findings.md)** for current technical status
+3. Follow the **[Phase 1 Implementation Plan](docs/phase1-implementation-plan.md)** for detailed procedures
+
+### For Users
+This project is in early development. Setup instructions will be available after Phase 1 research is complete.
 
 ## Contributing
 
