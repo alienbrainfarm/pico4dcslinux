@@ -1,2 +1,25 @@
-This project is intended to explore getting DCS working on Popos Linux with VR working with the Pico4 headset.
+PHASE 1 IMPLEMENTATION: Research & Environment Setup
 
+This project explores getting DCS (Digital Combat Simulator) working on Pop!_OS Linux with VR working with the Pico 4 headset.
+
+CURRENT STATUS: Phase 1 - Research & Environment Setup
+
+QUICK START:
+1. Review docs/phase1-action-items.md for day-by-day checklist
+2. Check docs/phase1-research-findings.md for current technical status  
+3. See docs/phase1-implementation-plan.md for complete Phase 1 guide
+
+KEY PHASE 1 OBJECTIVES:
+- Research Linux VR ecosystem (OpenXR, Monado, ALVR)
+- Test Pico 4 connectivity options
+- Validate DCS + Wine compatibility
+- Establish performance baselines
+- Document findings and create Phase 2 roadmap
+
+MAIN TECHNICAL CHALLENGES TO INVESTIGATE:
+- Wine VR API support limitations
+- Pico 4 Linux driver availability  
+- Performance overhead (Wine + VR)
+- DCS VR mode compatibility through Wine
+
+See docs/ directory for complete documentation.
