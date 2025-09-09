@@ -8,12 +8,32 @@ This project explores getting DCS (Digital Combat Simulator) working on Pop!_OS 
 
 ## Repository Structure
 
-The repository currently contains minimal files:
+The repository currently contains:
 - `notes.txt` - Project objectives and initial notes
+- `command-log.md` - Execution log of all commands run during setup
+- `console-gui-plan.md` - Current plan for console GUI setup
 
 ## Development Status
 
-This appears to be a new project focused on VR gaming compatibility research. No build system, source code, or development workflows have been established yet.
+This project is in active development focusing on dual display setup (RDP + console GUI) for VR gaming compatibility research. Current phase is establishing working console GUI session alongside existing RDP session.
+
+## Command Logging Requirements
+
+**IMPORTANT**: Claude Code MUST log ALL commands executed to `command-log.md` to maintain session continuity across crashes.
+
+### Logging Format:
+```bash
+echo "# [Description of action] - $(date)" >> command-log.md
+echo "[command executed]" >> command-log.md 
+echo "# Result: [brief result description]" >> command-log.md
+```
+
+### Commands to Always Log:
+- System state checks (ps, systemctl status, who, loginctl)
+- Display manager operations (GDM, X server operations) 
+- Session switching and environment testing
+- VR application launches and GPU access tests
+- Any command that modifies system state
 
 ## Project Context
 
