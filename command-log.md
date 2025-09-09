@@ -222,3 +222,7 @@ cat /sys/class/drm/card0-*/status
 # SUCCESS: VR mode enabled, jpvr logged in, setup completed
 # DESKTOP SETUP: Copying applications and configs from swim to jpvr
 # DESKTOP SETUP COMPLETE: Applications, Steam, and DCS shortcuts copied to jpvr
+# GDM3 status check - Tue Sep  9 03:02:17 PM CEST 2025
+# X server processes - $(date)
+# Active sessions - Tue Sep  9 03:02:19 PM CEST 2025
+# REBOOT SURVIVAL DOCUMENTATION CREATED - Tue Sep  9 03:03:16 PM CEST 2025
