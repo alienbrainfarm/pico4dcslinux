@@ -197,3 +197,28 @@ who: swim still logged in tty7, session 11 still active
 # Console should now display login screen. Can test login by switching to tty1
 # Console showing random chars after session termination - Tue Sep  9 01:49:33 PM CEST 2025
 # Attempted console reset and GDM restart
+# Console GUI Recovery - Tue Sep  9 02:29:40 PM CEST 2025
+systemctl status gdm3
+# Result: GDM3 active (running) since 14:10:22 CEST
+ps aux | grep -E "(Xorg|Xvnc|gdm)"
+# Result: Found jpvr X session :0 on vt1, GDM greeter on tty1, VNC :10 for swim
+cat /sys/class/drm/card0-*/status
+# Result: One display connected (HDMI-A-2 from previous logs)
+# ISSUE IDENTIFIED: jpvr X session running with VNC resolution instead of physical display
+# GDM3 restarted successfully - greeter should be on tty1
+# USER CONFUSION ISSUE - Console asking for swim instead of jpvr after GDM restart
+# SOLUTION: Console should show GDM greeter on tty1 - select jpvr user instead of swim
+# BLACK SCREEN ISSUE: No greeter visible, just cursor on tty1
+# DIAGNOSIS: NVIDIA driver unable to detect physical display for DPI computation
+# WORKAROUND: Stopped GDM, console should show text login - log in as jpvr then run startx
+# Console login also shows black screen - system appears headless
+# ROOT CAUSE FOUND: /etc/X11/xorg.conf.d/10-headless.conf has UseDisplayDevice=none
+# CAREFUL: Need to preserve VNC setup while enabling physical display
+# New config failed - black screen no cursor. Reverted to original headless config
+# VR REQUIREMENT: DCS needs physical console due to SteamVR/Vulkan issues with VNC
+# Console switching broke displays - tty1/2 black, tty7 cursor only
+# SOLUTION: Created toggle script to switch between VNC and VR modes
+# SWITCHING TO VR MODE: Headless config disabled, physical display should work
+# SUCCESS: VR mode enabled, jpvr logged in, setup completed
+# DESKTOP SETUP: Copying applications and configs from swim to jpvr
+# DESKTOP SETUP COMPLETE: Applications, Steam, and DCS shortcuts copied to jpvr
